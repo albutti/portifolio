@@ -1,0 +1,181 @@
+body {
+    margin: auto;
+    font-size: 15px;
+}
+
+header {
+    background-color: rgb(49, 49, 105);
+    color: white;
+    height: 50px;
+    padding: 20px;
+}
+
+.link_menu {
+    text-decoration: none;
+    color: white;
+    padding-top: 20px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.link_menu_1 {
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    padding-left: 150px;
+    margin-right: 400px;
+}
+
+main {
+    text-align: center;
+    display: inline-flex;
+}
+
+.article1 {
+    display: inline-flex;
+    text-align: left center;
+    margin-left: 250px;
+    justify-content: space-around;
+}
+
+.article2 {
+    display: inline-flex;
+    text-align: left center;
+    margin-left: 100px;
+    padding-right: 150px;
+    padding-bottom: 50px;
+    justify-content: space-around;
+}
+
+.article3 {
+    text-align: left;
+    margin-left: 100px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+}
+
+.planos {
+    display: inline-flex;
+    padding-left: 100px;
+    align-items: flex-end;
+}
+
+.foto1 {
+    text-align: center;
+}
+
+.titulo1 {
+    color: rgb(49, 49, 105);
+    font-size: 30px;
+}
+
+.link_secundarios {
+    background-color: rgb(49, 49, 105);
+    border: 1px solid black;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 7px 20px;
+}
+
+.texto1 {
+    margin-right: 150px;
+    padding-top: 100px;
+}
+
+.texto2 {
+    padding-left: 20px;
+    padding-top: 100px;
+}
+
+.h1_sect2 {
+    border-left: 3px solid rgb(49, 49, 105);
+    padding-left: 5px;
+    color: rgb(49, 49, 105);
+    font-size: 30px;
+}
+
+p {
+    padding-top: 15px;
+}
+
+.servicos {
+    background-color: rgb(49, 49, 105);
+    color: white;
+    text-align: left;
+    padding: 40px 150px 50px 150px;
+}
+
+.div_servicos {
+    display: flex;
+    text-align: center;
+
+}
+
+.div_servicos > div {
+    width: 300px;
+}
+
+.fotos_servicos {
+    width: 200px;
+    height: 200px;
+}
+
+.link_servicos {
+    background-color: white;;
+    border: 1px solid black;
+    border-radius: 20px;
+    color: rgb(49, 49, 105);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 7px 20px;
+}
+
+.h2_planos {
+    color: rgb(49, 49, 105);
+}
+
+.div_plano {
+    border: 2px solid rgb(49, 49, 105);
+    width: 250px;
+    margin-left: 30px;
+    padding-bottom: 10px;
+}
+
+.div_plano1:hover, .div_plano2:hover, .div_plano3:hover {
+    border: 2px solid rgb(85, 135, 199);
+}
+
+.link_plano {
+    background-color: rgb(49, 49, 105);
+    border: 1px solid black;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 7px 15px; 
+    text-align: center;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+
+.titulo_plano {
+    border-bottom: 2px solid rgb(49, 49, 105);
+    text-align: center;
+    width: 75px;
+    margin-left: 75px;
+    margin-bottom: 10px;
+
+}
+
+footer {
+    background: rgb(49, 49, 105);
+    display: flex;
+}
+
+footer > div {
+    width: 350px;
+    margin-left: 100px;
+    color: white;
+}

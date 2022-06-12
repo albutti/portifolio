@@ -1,0 +1,95 @@
+body {
+    background-color: rgb(236, 209, 149);
+    text-align: center;
+}
+
+.azul {
+    background-color: rgb(59, 59, 63);
+    width: 200px;
+    height: 200px;
+    border-top-left-radius: 200px;
+    border: 4px solid black;
+}
+
+.azul:hover {
+    background-color: rgb(87, 87, 248);
+}
+
+.azul:active {
+    background-color: blue;
+}
+
+.amarelo {
+    background-color: rgb(59, 59, 63);
+    width: 200px;
+    height: 200px;
+    border-top-right-radius: 200px;
+    border: 4px solid black;
+
+}
+
+.amarelo:hover {
+    background-color: rgb(245, 245, 116);
+}
+
+.amarelo:active {
+    background-color: yellow;
+}
+
+.vermelho {
+    background-color: rgb(59, 59, 63);
+    width: 200px;
+    height: 200px;
+    border-bottom-left-radius: 200px;
+    border: 4px solid black;
+}
+
+.vermelho:hover {
+    background-color: rgb(226, 97, 97);
+}
+
+.vermelho:active {
+    background-color: red;
+}
+
+.verde {
+    background-color: rgb(59, 59, 63);
+    width: 200px;
+    height: 200px;
+    border-bottom-right-radius: 200px;
+    border: 4px solid black;
+}
+
+.verde:hover {
+    background-color: rgb(95, 223, 95);
+}
+
+.verde:active {
+    background-color: green;
+}
+
+.genius {
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: auto;
+    padding: 5px;
+    width: 415px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px rgba(1, 1, 17, 0.664);
+}
+
+.div_quadrados {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.iniciar {
+    background-color: black;
+    font-size: 20px;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    color: white;
+    text-align: center;
+}

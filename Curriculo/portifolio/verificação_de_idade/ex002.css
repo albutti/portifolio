@@ -1,0 +1,33 @@
+body {
+    background-color: dodgerblue;
+}
+#titulo {
+    text-align: center;
+    color: white;
+}
+#caixa_de_conteudo {
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: auto;
+    padding: 15px;
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px rgba(1, 1, 17, 0.664);
+}
+#rodape {
+    text-align: center;
+    color: white;
+}
+#imagem {
+    border-radius: 4000px;
+    margin-left: auto;
+    
+}
+#msg {
+    margin: auto;
+}
+
+div {
+    text-align: left;
+}
+

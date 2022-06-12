@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-compatible" content="ie=edge">
+        <title>Hora do Dia</title>
+        <link rel="stylesheet" href="ex002.css">
+    </head>
+    <body>
+        <header>
+            <h2 id="titulo">Verificção de idade</h2>
+        </header>
+        <section id="caixa_de_conteudo">
+            <div id="msg">
+                Ano de Nacimento: <input type="number" name="txtano" id="txtano" min="0" max="9999">
+            </div>
+            <br>
+            <div>
+                Sexo: <input type="radio" name="txtres" value="masculino" id="masculino" checked> Masculino<input type="radio" name="txtres" id="feminino" value="feminino"> Feminino
+            </div>
+            <br>
+            <div>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </div>
+            <br>
+            <p id="res">
+                Preecha os dados para realizarmos a validação. 
+            </p>
+            <br>
+            <div id="foto">
+            </div>
+            <br>
+        </section>
+        <footer>
+            <p id="rodape">&copy; Caique Albutti</p>
+        </footer>
+        <script src="ex002.js"></script>
+    </body>
+</html>

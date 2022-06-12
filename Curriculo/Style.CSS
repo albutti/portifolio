@@ -1,0 +1,112 @@
+* {
+    margin: 0px;
+    padding: 0px
+}
+
+header {
+    background-color: rgb(226, 220, 186);
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+}
+
+nav > a {
+    color: black;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 30px;   
+}
+
+nav > a:hover {
+    background-color: rgb(199, 194, 165);
+}
+
+/* Dados pessoais */
+
+.dado_pessoa {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    padding: 10px;
+}
+
+.dados > a {
+    display: block;
+    padding-left: 25px;
+    padding-top: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Formação */
+
+.formacao {
+    background-color: blanchedalmond;
+    text-align: center;
+    padding: 10px;
+}
+
+.instituicoes {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    margin: 20px;
+}
+
+.instituicao {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 300px;
+}
+
+/* Experiencia */
+
+.experiencias {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.carteira_trabalho {
+    display: flex;
+    justify-content: center;
+}
+
+.trabalho {
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+/* Cursos */
+
+.cursos {
+    background-color: blanchedalmond;
+    text-align: center;
+    padding: 10px;
+}
+
+.instituicoes_de_cursos {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-items: center;
+    margin: 20px;
+}
+
+.instituicao_curso {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 200px;
+}
+
+footer {
+    display: block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 30px;
+    padding-top: 5px;
+}

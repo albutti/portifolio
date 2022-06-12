@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-compatible" content="ie=edge">
+        <title>Tabuada</title>
+        <link rel="stylesheet" href="ex004.css">
+    </head>
+    <body>
+        <header>
+            <h2 id="titulo">Gerador de Tabuada</h2>
+        </header>
+        <section id="caixa_de_conteudo">
+            <div id="dados">
+                <p>Numero: <input type="number" name="numero" id="txtn"> 
+                <input type="button" value="Gerar Tabuada" onclick="tabuada()"></p>
+            </div>
+            <br>
+            <div>
+                <select name="tabuada" id="seltab" size="10">
+                    <option>Digite um número a cima </option>
+                </select>
+            </div>
+        </section>
+        <footer>
+            <p id="rodape">&copy; Caique Albutti</p>
+        </footer>
+        <script src="ex004.js"></script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+header, footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: inline-flex;
+    width: 100%;
+    padding: 5px;
+    align-items: center;
+}
+
+header a {
+    color: rgb(182, 182, 182);
+    text-decoration: none;
+    font-size: 30px;
+    width: 200px;
+    padding-right: 20px;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    background-color: rgb(32, 32, 32);
+}
+
+.logo {
+    width: 400px;
+    margin-right: 600px;
+    color: red;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+a {
+    width: 200px;
+    padding: 5px 10px;
+}

@@ -1,0 +1,1 @@
+Contador com limitação de contador de 0 a 10 

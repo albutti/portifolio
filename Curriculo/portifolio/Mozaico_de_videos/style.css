@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+    background: rgb(31, 29, 29);
+    color: white;
+}
+
+.imagem {
+    width: 400px;
+} 
+
+.voltar {
+    width: 50px;
+}
