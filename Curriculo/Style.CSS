@@ -15,7 +15,7 @@ nav {
 nav > a {
     color: black;
     text-decoration: none;
-    margin-right: 20px;
+    padding: 15px;
     font-size: 30px;   
 }
 
@@ -25,10 +25,27 @@ nav > a:hover {
 
 /* Dados pessoais */
 
+.foto_perfil {
+    text-align: center;
+}
+
+.foto_pessoa {
+    width: 200px;
+    border-radius: 100px;
+    border: 3px solid black;
+}
+
 .dado_pessoa {
     display: grid;
     grid-template-columns: 25% 75%;
     padding: 10px;
+    vertical-align: middle;
+    align-items: center;
+    font-size: 20px;
+}
+
+.dados > h1 {
+    font-size: 30px;
 }
 
 .dados > a {
@@ -59,6 +76,13 @@ nav > a:hover {
     border: 2px solid black;
     border-radius: 10px;
     width: 300px;
+    background-color: white;
+}
+
+.logo_formacao {
+    width: 150px;
+    padding: 5px;
+    height: 150px;
 }
 
 /* Experiencia */
@@ -78,6 +102,8 @@ nav > a:hover {
     margin: 20px;
     border: 2px solid black;
     border-radius: 10px;
+    width: 200px;
+    background-color: blanchedalmond;
 }
 
 /* Cursos */
@@ -93,6 +119,7 @@ nav > a:hover {
     grid-template-columns: 33% 33% 33%;
     justify-items: center;
     margin: 20px;
+    
 }
 
 .instituicao_curso {
@@ -100,6 +127,32 @@ nav > a:hover {
     border: 2px solid black;
     border-radius: 10px;
     width: 200px;
+    background-color: white;
+}
+
+.logo_curso {
+    margin-top: 5px;
+    width: 150px;
+    height: 152px;
+}
+
+.botoes_cursos {
+    display: inline-flex;
+    text-align: center;
+}
+
+.botao_cursos {
+    text-decoration: none;
+    background-color: rgb(163, 160, 160);
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+.botao_cursos:hover {
+    border: 1px solid black;
 }
 
 footer {
