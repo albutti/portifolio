@@ -21,17 +21,17 @@
     <h1>Alura Midi</h1>
 
     <section class="teclado">
-        <button class="tecla tecla_pom">Pom</button>
-        <button class="tecla tecla_clap">Clap</button>
-        <button class="tecla tecla_tim">Tim</button>
+        <button class="tecla tecla_pom" onclick="tocar_pom()">Pom</button>
+        <button class="tecla tecla_clap" onclick="tocar_clap()">Clap</button>
+        <button class="tecla tecla_tim" onclick="tocar_tim()">Tim</button>
 
-        <button class="tecla tecla_puff">Puff</button>
-        <button class="tecla tecla_splash">Splash</button>
-        <button class="tecla tecla_toim">Toim</button>
+        <button class="tecla tecla_puff" onclick="tocar_puff()">Puff</button>
+        <button class="tecla tecla_splash" onclick="tocar_splash()">Splash</button>
+        <button class="tecla tecla_toim" onclick="tocar_toim()">Toim</button>
 
-        <button class="tecla tecla_psh">Psh</button>
-        <button class="tecla tecla_tic">Tic</button>
-        <button class="tecla tecla_tom">Tom</button>
+        <button class="tecla tecla_psh" onclick="tocar_psh()">Psh</button>
+        <button class="tecla tecla_tic" onclick="tocar_tic()">Tic</button>
+        <button class="tecla tecla_tom" onclick="tocar_tom()">Tom</button>
     </section>
 
     <audio src="sounds/keyq.wav" id="som_tecla_pom"></audio>
@@ -45,4 +45,5 @@
     <audio src="sounds/keyc.wav" id="som_tecla_tom"></audio>
 
 </body>
+<script src="script.js"></script>
 </html>

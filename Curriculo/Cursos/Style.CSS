@@ -1,0 +1,23 @@
+h3 {
+    margin: 10px;
+}
+
+.logos {
+    display: grid;
+    justify-items: center;
+    width: 200px;
+    text-align: center;
+}
+
+.logos > img {
+        margin-top: 5px;
+        width: 70px;
+        height: 72px;
+}
+
+.linha_cursos {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    padding-left: 30px;
+    margin-top: 20px;
+}
