@@ -5,29 +5,31 @@
         <title>Curriculum Caique Alba Buttignon</title>
         <link rel="stylesheet" href="base.css">
         <link rel="stylesheet" href="Style.CSS"> 
+        <link rel="stylesheet" href="listaDeArtigos.css">
+
         
     </head>
     <body>
         <header>
             <nav>
                 <a href="dados_pessoais/dados_pessoais.html">Dados Pessoais</a>
-                <a href="#">Formação</a>
-                <a href="#">Experiencia</a>
+                <a href="Formação/formacao.html">Formação</a>
+                <a href="experiencia/experiencia.html">Experiencia</a>
                 <a href="Cursos/cursos.html">Cursos</a>
-                <a href="#">Portifolio</a>
+                <a href="portifolio/portifolio.html">Portifolio</a>
             </nav>
         </header> 
         <main>
             <section class="dado_pessoa">
                 <div class="foto_perfil">
-                    <img src="Imagens/1591790713037.png.jfif" alt="Foto Caique" class="foto_pessoa">
+                    <img src="Imagens/caique_alba.jpeg" alt="Foto Caique" class="foto_pessoa">
                 </div>
                 <article class="dados">
                     <h1>Caique Alba Buttignon</h1>
                     <a href="#">caique.albutti@hotmail.com</a>
-                    <a href="#">github</a>
-                    <a href="#">(11) 9 6453-5583</a>
-                    <a href="#">Linkedin</a>
+                    <a href="https://github.com/albutti?tab=repositories" target="_blank" rel="external">github</a>
+                    <a href="https://api.whatsapp.com/send?phone=11964535583" target="_blank" rel="external">(11) 9 6453-5583</a>
+                    <a href="https://www.linkedin.com/in/caique-alba-buttignon-4aa7199a/" target="_blank" rel="external">Linkedin</a>
                 </article>
             </section>
             <section class="formacao">
@@ -75,29 +77,65 @@
                 <article class="instituicoes_de_cursos">
                     <div class="instituicao_curso">
                         <h4>Alura</h4>
-                        <div>
-                            <div>
-                                <img src="Imagens/Python 2 Programando com a linguagem.png" alt="Emblema Cursos" class="logo_curso">
-                                <p>Python 2: Programando com a linguagem</p>
-                            </div>
-                            <div class="botoes_cursos">
-                                <div class="botao_cursos">
-                                    <a href="#"></a>
-                                </div>
-                                <div class="botao_cursos">
-                                    <a href="#"></a>
-                                </div>
-                                <div class="botao_cursos">
-                                    <a href="#"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        <section>
+                            <ul class="listaDeArtigos">
+            
+                                <li id="alura_1" class="listaDeArtigos-item">
+                                    <article class="listaDeArtigos-artigo">
+                                      <img src="Cursos/imagens/Alura/html e css parte 4.png" class="listaDeArtigos-artigo-img" alt="Pessoas levantando um senhor para ver melhor um show">
+                                      <p>
+                                        p4
+                                      </p>
+                                    </article>
+                                  </li>
+                      
+                                <li id="alura_2" class="listaDeArtigos-item">
+                                    <article class="listaDeArtigos-artigo">
+                                      <img src="Cursos/imagens/Alura/formacao html e css.png" class="listaDeArtigos-artigo-img" alt="Pessoas levantando um senhor para ver melhor um show">
+                                      <p>
+                                        html css
+                                      </p>
+                                    </article>
+                                  </li>
+                      
+                                <li id="alura_3" class="listaDeArtigos-item">
+                                  <article class="listaDeArtigos-artigo">
+                                    <img src="Cursos/imagens/Alura/css dispondo elementos com flexbox e grid.png" class="listaDeArtigos-artigo-img" alt="Pessoas levantando um senhor para ver melhor um show">
+                                    <p>
+                                      grid
+                                    </p>
+                                  </article>
+                                </li>
+                      
+                              </ul>
+                      
+                              <nav>
+                                <ul class="listaDeArtigos-slider">
+                                  <li>
+                                    <a href="#alura_1" data-sliderItem="0" class="listaDeArtigos-slider-item">
+                                      Notícia 1
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#alura_2" data-sliderItem="1" class="listaDeArtigos-slider-item">
+                                      Notícia 2
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#alura_3" data-sliderItem="2" class="listaDeArtigos-slider-item">
+                                      Notícia 3
+                                    </a>
+                                  </li>
+                                </ul>
+                              </nav>
+                      
+                        </section>
+                    </div>   
                     <div class="instituicao_curso">
                         <h4>Estudonauta</h4>
                         <div>
                             <div>
-                                <img src="Imagens/HTML5CSS3-03-1024x640-landscape.png" alt="Emblema Cursos" class="logo_curso">
+                                <img src="Cursos/imagens/Estudonauta/HTML5CSS3-03-1024x640-landscape.png" alt="Emblema Cursos" class="logo_curso">
                                 <br>
                                 <br>
                                 <p>(HTML5+CSS3): Módulo 3</p>
@@ -120,7 +158,7 @@
                         <h4>Dio</h4>
                         <div>
                             <div>
-                                <img src="Imagens/Construindo paginas para internet com bootstrap.png" alt="Emblema Cursos" class="logo_curso">
+                                <img src="Cursos/imagens/DIO/Construindo paginas para internet com bootstrap.png" alt="Emblema Cursos" class="logo_curso">
                                 <p>Construindo paginas para internet com bootstrap</p>
                             </div>
                             <div class="botoes_cursos">
@@ -139,6 +177,8 @@
                     </div>
                 </article>
             </section>
+            <br>
+            <br>
         </main>    
         <footer>
             <p>&copy; Site desemvolvido por Caique Albutti, assim todos os direitos reservados. </p>

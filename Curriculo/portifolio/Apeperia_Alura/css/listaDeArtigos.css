@@ -1,0 +1,62 @@
+.listaDeArtigos-artigo {
+  text-align: left;
+  padding-bottom: 2em;
+  max-width: 815px;
+  display: inline-block;
+  white-space: normal;
+}      
+
+.listaDeArtigos {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.listaDeArtigos-item {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  display: none;
+}
+
+
+.listaDeArtigos-item:not(:target):first-child{
+  display: inline-block;
+}
+
+.listaDeArtigos-item:target {
+  display: inline-block;
+}
+
+
+
+
+.listaDeArtigos-artigo-img {
+  width: 100%;
+  display: block;
+}
+
+/* Apenas para diferenciar as imagens */
+
+
+
+
+.listaDeArtigos-artigo-link {
+  color: #EB5757;
+  font-weight: bold;
+}
+
+
+
+.listaDeArtigos-slider li {
+  display: inline-block;
+}
+
+
+
+
+
+.listaDeArtigos-slider-item--ativo {
+  background: hsla(200, 70%, 0%, .6);
+}
+

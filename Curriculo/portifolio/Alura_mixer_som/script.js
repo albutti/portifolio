@@ -45,3 +45,9 @@ function tocar_clap() {
 function tocar_pom() {
     pom.play()
 }
+
+function toca_som(id) {
+    if (id == 1) {
+        pom.play()
+    }
+}
