@@ -168,48 +168,48 @@
                 </div>
                 <div class="informativo"> 
                     <div class="espasamento_informativo">
-                        <label for="alarme">Alarme: </label>
-                        <input type="radio" name="informativo" id="alarme" checked>
-                        <label for="alarme">Pré-Crise: </label>
-                        <input type="radio" name="informativo" id="crise">
-                        <label for="alarme">Pré-Degradação: </label>
-                        <input type="radio" name="informativo" id="degradação">
+                        <input type="radio" name="informativo" id="alarme" checked class="informativo_check">
+                        <label for="alarme">Alarme </label>
+                        <input type="radio" name="informativo" id="crise" class="informativo_check">
+                        <label for="alarme">Pré-Crise </label>
+                        <input type="radio" name="informativo" id="degradação" class="informativo_check">
+                        <label for="alarme">Pré-Degradação </label>
                     </div>
                     <form>
                         <div class="espasamento_informativo">
                             <label for="nome" >Cliente: </label>
-                            <select name="select">
-                                <option value="producao">ABC</option>
-                                <option value="projeto">CNU</option>
-                                <option value="producao">ABC</option>
-                                <option value="projeto">VC</option>
-                                <option value="producao">VE</option>
-                                <option value="projeto">VSA</option>
+                            <select name="select" id="cliente_informativo">
+                                <option value="ABC">ABC</option>
+                                <option value="Central nacional Unimed">CNU</option>
+                                <option value="Brookfield Energia renovavel">BER</option>
+                                <option value="Votorantim Cimentos">VC</option>
+                                <option value="Votorantim Energia">VE</option>
+                                <option value="CEMIG">CEMIG</option>
                             </select>
                         </div> 
                         <div class="espasamento_informativo">
                             <label for="nome">ACN: </label>
-                            <input type="text" id="nome" placeholder="Ambiente Impactado" required>
+                            <input type="text" id="acn_informativo" placeholder="Ambiente Impactado">
                         </div>  
                         <div class="espasamento_informativo">
                             <label for="nome">INC: </label>
-                            <input type="text" id="nome" placeholder="Numero do incidente" required>
+                            <input type="text" id="inc_informativo" placeholder="Numero do incidente">
                         </div>  
                         <div class="espasamento_informativo">
                             <label for="nome">Impacto: </label>
-                            <input type="text" id="nome" placeholder="Descrição do impacto" required>
+                            <input type="text" id="impacto_informativo" placeholder="Descrição do impacto">
                         </div>
                         <div class="espasamento_informativo">
                             <label for="informativo_link">Teams: </label>
-                            <input type="text" id="informativo_link" placeholder="Link sala teams" required>
+                            <input type="text" id="link_teams_informativo" placeholder="Link sala teams">
                         </div>  
                         <div class="espasamento_informativo">
                             <label for="telefone_informativo_teams">Telefone: </label>
-                            <input type="text" id="telefone_informativo_teams" placeholder="Telefone ramal teams">
+                            <input type="text" id="telefone_teams_informativo" placeholder="Telefone ramal teams">
                         </div>  
                         <div class="espasamento_informativo">
                             <label for="id_informativo_teams">ID: </label>
-                            <input type="text" id="id_informativo_teams" placeholder="ID sala teams" required>
+                            <input type="text" id="id_teams_informativo" placeholder="ID sala teams" required>
                         </div>
                         <p class="p_botao"><a href="javascript: abrir_informativo();" class="botao">Gerar comunicação</a></p> 
                     </form>
@@ -274,6 +274,7 @@
             </section>		
         </div>
 
+
 <!-- Inicial de crise -->
         <div id="popup_inicial_crise" class="popup">
             <header class="topo_inicial">
@@ -283,31 +284,31 @@
                 <div class="Criando_mensagem">
                     <div class="espasamento_informativo">
                         <label for="numero_crise">Iniciando Crise: </label>
-                        <input type="text" id="numero_crise" placeholder="2022.XX-XX" required>
+                        <input type="text" id="numero_inicial_crise" placeholder="2022.XX-XX" required>
                     </div>  
                     <div class="espasamento_informativo">
                         <label for="Cliente">Cliente: </label>
-                        <input type="text" id="Cliente" placeholder="Votorantim Cimentos" required>
+                        <input type="text" id="cliente_inicial_crise" placeholder="Votorantim Cimentos" required>
                     </div>  
                     <div class="espasamento_informativo">
                         <label for="acn_crise">Ambiente: </label>
-                        <input type="text" id="acn_crise" placeholder="ACN Impactado" required>
+                        <input type="text" id="acn_inicial_crise" placeholder="ACN Impactado" required>
                     </div>
                     <div class="espasamento_informativo">
                         <label for="link_teams_crise">Teams: </label>
-                        <input type="text" id="link_teams_crise" placeholder="Link da sala teams" required>
+                        <input type="text" id="link_teams_inicial_crise" placeholder="Link da sala teams" required>
                     </div>
                     <div class="espasamento_informativo">
                         <label for="telefone_teams_crise">Telefone: </label>
-                        <input type="text" id="telefone_teams_crise" placeholder="telefone ramal teams" required>
+                        <input type="text" id="telefone_teams_inicial_crise" placeholder="telefone ramal teams" required>
                     </div>
                     <div class="espasamento_informativo">
                         <label for="id_crise">ID: </label>
-                        <input type="text" id="id_crise" placeholder="ID da sala Teams" required>
+                        <input type="text" id="id_teams_inicial_crise" placeholder="ID da sala Teams" required>
                     </div>
                     <div class="espasamento_informativo">
                         <label for="sintoma_crise">Sintoma: </label>
-                        <select name="select" id="sintoma_crise">
+                        <select name="select" id="sintoma_inicial_crise">
                             <option value="Lentidão">Lentidão</option>
                             <option value="Indisponibilidade">Indisponibilidade</option>
                             <option value="Degradação">Degradação</option>
@@ -315,31 +316,27 @@
                     </div>
                     <div class="espasamento_informativo">
                         <label for="impacto_crise">Impacto: </label>
-                        <input type="text" id="impacto_crise" placeholder="Ambiente apresentando..." required>
+                        <input type="text" id="impacto_inicial_crise" placeholder="Ambiente apresentando..." required>
                     </div>
                     <div class="espasamento_informativo">
                         <label for="inicio_impacto_crise">Início do impacto: </label>
-                        <input type="datetime-local" id="inicio_impacto_crise" placeholder="" required>
+                        <input type="datetime-local" id="inicio_impacto_inicial_crise" placeholder="" required>
                     </div>
                     <div class="espasamento_informativo">
                         <label for="inicio_crise">Início da Crise: </label>
                         <input type="datetime-local" id="inicio_crise" placeholder="" required>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="delay_crise">Delay Impacto X Tratativa: </label>
-                        <input type="datetime-local" id="delay_crise" placeholder="" required>
-                    </div>
-                    <div class="espasamento_informativo">
                         <label for="identificado_crise">Identificado por: </label>
-                        <select name="select" id="identificado_crise">
+                        <select name="select" id="identificado_inicial_crise">
                             <option value="Tivit">TIVIT</option>
                             <option value="Cliente">Cliente</option>
                         </select>
                     </div>
                     <div class="espasamento_informativo">
                         <label for="equipe_rm_crise">Resolution Manager: </label>
-                        <input type="text" id="equipe_rm_crise" placeholder="Nome Sobrenome" required>
-                        <select name="select">
+                        <input type="text" id="rm_inicial_crise" placeholder="Nome Sobrenome" required>
+                        <select name="select" id="grupo_rm_inicial_crise">
                             <option value="TSO">TSO</option>
                             <option value="TMM">TMM</option>
                             <option value="Cloud">Cloud</option>
@@ -348,11 +345,11 @@
                     </div>
                     <div class="espasamento_informativo">
                         <label for="Equipes_atuando_crise">Equipes atuando: </label>
-                        <input type="text" id="Equipes_atuando_crise" placeholder="Windows, NOC, SOC, Linux..." required>
+                        <input type="text" id="equipes_atuando_inicial_crise" placeholder="Windows, NOC, SOC, Linux..." required>
                     </div>
                     <div class="espasamento_informativo">
                         <label for="Responsavel_TSR_Crise">Responsavel TSR: </label>
-                        <input type="text" id="Responsavel_TSR_Crise" placeholder="Nome Sobrenome" required>
+                        <input type="text" id="responsavel_tsr_inicial_crise" placeholder="Nome Sobrenome" required>
                     </div>
                     <p class="p_botao"><a href="#" class="botao" onclick="gerar_copia_incial_crise()">Gerar Copia</a></p>
                 </div>
@@ -368,6 +365,7 @@
             </section>			
         </div>
 
+
 <!-- Atualização de crise -->
         <div id="popup_atualizacao_crise" class="popup">
             <header class="topo_inicial">
@@ -376,35 +374,35 @@
             <section class="corpo_mensagem">
                 <div class="Criando_mensagem">
                     <div class="espasamento_informativo">
-                        <label for="numero_crise">Atualização da Crise: </label>
-                        <input type="text" id="numero_crise" placeholder="2022.XX-XX" required>
+                        <label for="numero_atualizacao_crise">Atualização da Crise: </label>
+                        <input type="text" id="numero_atualizacao_crise" placeholder="2022.XX-XX" required>
                     </div>  
                     <div class="espasamento_informativo">
-                        <label for="Cliente">Cliente: </label>
-                        <input type="text" id="Cliente" placeholder="Votorantim Cimentos" required>
+                        <label for="cliente_atualizacao_crise">Cliente: </label>
+                        <input type="text" id="cliente_atualizacao_crise" placeholder="Votorantim Cimentos" required>
                     </div>  
                     <div class="espasamento_informativo">
-                        <label for="acn_crise">Ambiente: </label>
-                        <input type="text" id="acn_crise" placeholder="ACN Impactado" required>
+                        <label for="acn_atualizacao_crise">Ambiente: </label>
+                        <input type="text" id="acn_atualizacao_crise" placeholder="ACN Impactado" required>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="status_crise">Status: </label><br>
-                        <textarea type="text" id="status_crise" placeholder="Ambiente segue..." cols="30" rows="5" required></textarea>
+                        <label for="status_atualizacao_crise">Status: </label><br>
+                        <textarea type="text" id="status_atualizacao_crise" placeholder="Ambiente segue..." cols="30" rows="5" required></textarea>
                     </div>
                     
                     <div class="espasamento_informativo">
-                        <label for="acao_crise">Ações Realizadas/Em Andamento: </label>
+                        <label for="acoes_atualizacao_crise">Ações Realizadas/Em Andamento: </label>
                         <br>
-                        <textarea type="text" id="acao_crise" placeholder="❌ Falha no servidor...       ✅ Acionamento da Equipe...      ⚠ Acompanhamento." cols="30" rows="5" required></textarea>
+                        <textarea type="text" id="acoes_atualizacao_crise" placeholder="❌ Falha no servidor...       ✅ Acionamento da Equipe...      ⚠ Acompanhamento." cols="30" rows="5" required></textarea>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="previsto_crise">Status: </label><br>
-                        <textarea type="text" id="previsto_crise" placeholder="📍 Validação do ambiente" cols="30" rows="5" required></textarea>
+                        <label for="previsto_atualizacao_crise">Status: </label><br>
+                        <textarea type="text" id="previsto_atualizacao_crise" placeholder="📍 Validação do ambiente" cols="30" rows="5" required></textarea>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="equipe_rm_crise">Resolution Manager: </label>
-                        <input type="text" id="equipe_rm_crise" placeholder="Nome Sobrenome" required>
-                        <select name="select">
+                        <label for="rm_atualizacao_crise">Resolution Manager: </label>
+                        <input type="text" id="rm_atualizacao_crise" placeholder="Nome Sobrenome" required>
+                        <select name="select" id="grupo_rm_atualizacao_crise" > 
                             <option value="TSO">TSO</option>
                             <option value="TMM">TMM</option>
                             <option value="Cloud">Cloud</option>
@@ -412,12 +410,8 @@
                         </select>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="Equipes_atuando_crise">Equipes atuando: </label>
-                        <input type="text" id="Equipes_atuando_crise" placeholder="Windows, NOC, SOC, Linux..." required>
-                    </div>
-                    <div class="espasamento_informativo">
-                        <label for="Responsavel_TSR_Crise">Responsavel TSR: </label>
-                        <input type="text" id="Responsavel_TSR_Crise" placeholder="Nome Sobrenome" required>
+                        <label for="tsr_atualizacao_crise">Responsavel TSR: </label>
+                        <input type="text" id="tsr_atualizacao_crise" placeholder="Nome Sobrenome" required>
                     </div>
                     <p class="p_botao"><a href="#" class="botao" onclick="gerar_copia_atualizacao_crise()">Gerar Copia</a></p>
                     <p>✅ Concluido  📍 Previsto</p>
@@ -435,6 +429,7 @@
             </section>			
         </div>
 
+
 <!-- Validação de crise -->
         <div id="popup_validacao_crise" class="popup">
             <header class="topo_inicial">
@@ -443,28 +438,28 @@
             <section class="corpo_mensagem">
                 <div class="Criando_mensagem">
                     <div class="espasamento_informativo">
-                        <label for="numero_crise">Atualização da Crise: </label>
-                        <input type="text" id="numero_crise" placeholder="2022.XX-XX" required>
+                        <label for="numero_validacao_crise">Atualização da Crise: </label>
+                        <input type="text" id="numero_validacao_crise" placeholder="2022.XX-XX" required>
                     </div>  
                     <div class="espasamento_informativo">
-                        <label for="Cliente">Cliente: </label>
-                        <input type="text" id="Cliente" placeholder="Votorantim Cimentos" required>
+                        <label for="cliente_validacao_crise">Cliente: </label>
+                        <input type="text" id="cliente_validacao_crise" placeholder="Votorantim Cimentos" required>
                     </div>  
                     <div class="espasamento_informativo">
-                        <label for="acn_crise">Ambiente: </label>
-                        <input type="text" id="acn_crise" placeholder="ACN Impactado" required>
+                        <label for="acn_validacao_crise">Ambiente: </label>
+                        <input type="text" id="acn_validacao_crise" placeholder="ACN Impactado" required>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="status_crise">Status: </label><br>
-                        <textarea type="text" id="status_crise" cols="30" rows="5" required>Ambiente segue operacional e em fase de validação junto ao cliente. Checkpoint as XXhXX.</textarea>
+                        <label for="status_validacao_crise">Status: </label><br>
+                        <textarea type="text" id="status_validacao_crise" cols="30" rows="5" required>Ambiente segue operacional e em fase de validação junto ao cliente. Checkpoint as XXhXX.</textarea>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="solucao_crise">Solução Aplicada: </label>
-                        <input type="text" id="solucao_crise" placeholder="Boot na maquina..." required>
+                        <label for="solucao_validacao_crise">Solução Aplicada: </label>
+                        <input type="text" id="solucao_validacao_crise" placeholder="Boot na maquina..." required>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="Responsavel_TSR_Crise">Responsavel TSR: </label>
-                        <input type="text" id="Responsavel_TSR_Crise" placeholder="Nome Sobrenome" required>
+                        <label for="tsr_validacao_crise">Responsavel TSR: </label>
+                        <input type="text" id="tsr_validacao_crise" placeholder="Nome Sobrenome" required>
                     </div>
                     <p class="p_botao"><a href="#" class="botao" onclick="gerar_copia_validacao_crise()">Gerar Copia</a></p>
                 </div>
@@ -480,6 +475,7 @@
             </section>			
         </div>
 
+
 <!-- Encerramento de crise -->
         <div id="popup_encerramento_crise" class="popup">
             <header class="topo_inicial">
@@ -488,49 +484,41 @@
             <section class="corpo_mensagem">
                 <div class="Criando_mensagem">
                     <div class="espasamento_informativo">
-                        <label for="numero_crise">Encerramento da Crise: </label>
-                        <input type="text" id="numero_crise" placeholder="2022.XX-XX" required>
+                        <label for="numero_encerramento_crise">Encerramento da Crise: </label>
+                        <input type="text" id="numero_encerramento_crise" placeholder="2022.XX-XX" required>
                     </div>  
                     <div class="espasamento_informativo">
-                        <label for="Cliente">Cliente: </label>
-                        <input type="text" id="Cliente" placeholder="Votorantim Cimentos" required>
+                        <label for="cliente_encerramento_crise">Cliente: </label>
+                        <input type="text" id="cliente_encerramento_crise" placeholder="Votorantim Cimentos" required>
                     </div>  
                     <div class="espasamento_informativo">
-                        <label for="acn_crise">Ambiente: </label>
-                        <input type="text" id="acn_crise" placeholder="ACN Impactado" required>
+                        <label for="acn_encerramento_crise">Ambiente: </label>
+                        <input type="text" id="acn_encerramento_crise" placeholder="ACN Impactado" required>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="status_crise">Status: </label><br>
-                        <textarea type="text" id="status_crise" placeholder="Preencher solução aplicada no portal." cols="30" rows="5" required></textarea>
+                        <label for="status_encerramento_crise">Status: </label><br>
+                        <textarea type="text" id="status_encerramento_crise" placeholder="Preencher solução aplicada no portal." cols="30" rows="5" required></textarea>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="data_encerramento_crise">Data Encerramento: </label>
-                        <input type="datetime-local" id="data_encerramento_crise" placeholder="" required>
+                        <label for="inicio_encerramento_crise">Inicio da Crise: </label>
+                        <input type="datetime-local" id="inicio_encerramento_crise" placeholder="" required>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="periodo_impacto_crise">Período de impacto: </label>
-                        <input type="datetime-local" id="periodo_impacto_crise" placeholder="" required>
+                        <label for="fim_encerramento_crise">Encerramento: </label>
+                        <input type="datetime-local" id="fim_encerramento_crise" placeholder="" required>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="validacao_crise">Período de Validação: </label>
-                        <input type="datetime-local" id="validacao_crise" placeholder="" required>
+                        <label for="inicio_impacto_encerramento_crise">Inicio de impacto: </label>
+                        <input type="datetime-local" id="inicio_impacto_encerramento_crise" placeholder="" required>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="inicio_crise">Início: </label>
-                        <input type="datetime-local" id="inicio_crise" placeholder="" required>
+                        <label for="inicio_validacao_encerramento_crise">Fim do impacto: </label>
+                        <input type="datetime-local" id="fim_impacto_encerramento_crise" placeholder="" required>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="fim_crise">Fim: </label>
-                        <input type="datetime-local" id="fim_crise" placeholder="" required>
-                    </div>
-                    <div class="espasamento_informativo">
-                        <label for="Periodo_Crise">Período: </label>
-                        <input type="datetime-local" id="Periodo_Crise" placeholder="" required>
-                    </div>
-                    <div class="espasamento_informativo">
-                        <label for="equipe_rm_crise">Resolution Manager: </label>
-                        <input type="text" id="equipe_rm_crise" placeholder="Nome Sobrenome" required>
-                        <select name="select">
+                        <label for="rm_encerramento_crise">Resolution Manager: </label>
+                        <input type="text" id="rm_encerramento_crise" placeholder="Nome Sobrenome" required>
+                        <select name="select" id="grupo_rm_encerramento_crise">
                             <option value="TSO">TSO</option>
                             <option value="TMM">TMM</option>
                             <option value="Cloud">Cloud</option>
@@ -538,8 +526,8 @@
                         </select>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="Responsavel_TSR_Crise">Responsavel TSR: </label>
-                        <input type="text" id="Responsavel_TSR_Crise" placeholder="Nome Sobrenome" required>
+                        <label for="tsr_encerramento_crise">Responsavel TSR: </label>
+                        <input type="text" id="tsr_encerramento_crise" placeholder="Nome Sobrenome" required>
                     </div>
                     <p class="p_botao"><a href="#" class="botao" onclick="gerar_copia_encerramento_crise()">Gerar Copia</a></p>
                 </div>
@@ -557,65 +545,72 @@
 
 
 <!-- unica de crise -->
-<div id="popup_unica_crise" class="popup">
-    <header class="topo_inicial">
-        <a href="javascript: fechar_unica_crise();" class="fechar_informativo">X</a>
-    </header>
-    <section class="corpo_mensagem">
-        <div class="Criando_mensagem">
-            <div class="espasamento_informativo">
-                <label for="numero_crise">Crise Única: </label>
-                <input type="text" id="numero_crise" placeholder="2022.XX-XX" required>
-            </div>  
-            <div class="espasamento_informativo">
-                <label for="Cliente">Cliente: </label>
-                <input type="text" id="Cliente" placeholder="Votorantim Cimentos" required>
-            </div>  
-            <div class="espasamento_informativo">
-                <label for="acn_crise">Ambiente: </label>
-                <input type="text" id="acn_crise" placeholder="ACN Impactado" required>
-            </div>
-            <div class="espasamento_informativo">
-                <label for="sintoma_degradacao">Sintoma: </label>
-                <select name="select" id="sintoma_degradacao">
-                    <option value="Lentidão">Lentidão</option>
-                    <option value="Indisponibilidade">Indisponibilidade</option>
-                    <option value="Degradação">Degradação</option>
-                </select>
-            </div>
-            <div class="espasamento_informativo">
-                <label for="status_crise">Impacto: </label><br>
-                <textarea type="text" id="status_crise" placeholder="Houve indisponibilidade monmentânea no ambiente. Normalizado e validade após XXXXXX." cols="30" rows="5" required></textarea>
-            </div>
-            <div class="espasamento_informativo">
-                <label for="data_encerramento_crise">horârio de notificação para o TSR: </label>
-                <input type="datetime-local" id="data_encerramento_crise" placeholder="" required>
-            </div>
-            <div class="espasamento_informativo">
-                <label for="periodo_impacto_crise">Período de impacto de: </label>
-                <input type="datetime-local" id="periodo_impacto_crise" placeholder="" required>
-            </div>
-            <div class="espasamento_informativo">
-                <label for="validacao_crise">até: </label>
-                <input type="datetime-local" id="validacao_crise" placeholder="" required>
-            </div>
-            <div class="espasamento_informativo">
-                <label for="Responsavel_TSR_Crise">Responsável TSR: </label>
-                <input type="text" id="Responsavel_TSR_Crise" placeholder="Nome Sobrenome" required>
-            </div>
-            <p class="p_botao"><a href="#" class="botao" onclick="gerar_copia_unica_crise()">Gerar Copia</a></p>
-        </div>
-        <div>
-            <div class="texto_pronto" id="texto_unica_crise">
-                texto:
-            </div>
+        <div id="popup_unica_crise" class="popup">
+            <header class="topo_inicial">
+                <a href="javascript: fechar_unica_crise();" class="fechar_informativo">X</a>
+            </header>
+            <section class="corpo_mensagem">
                 <div class="Criando_mensagem">
-                    <p class="p_botao"><a href="#" class="botao" onclick="enviar()">Enviar</a></p> 
+                    <div class="espasamento_informativo">
+                        <label for="numero_unica_crise">Crise Única: </label>
+                        <input type="text" id="numero_unica_crise" placeholder="2022.XX-XX" required>
+                    </div>  
+                    <div class="espasamento_informativo">
+                        <label for="cliente_unica_crise">Cliente: </label>
+                        <input type="text" id="cliente_unica_crise" placeholder="Votorantim Cimentos" required>
+                    </div>  
+                    <div class="espasamento_informativo">
+                        <label for="acn_unica_crise">Ambiente: </label>
+                        <input type="text" id="acn_unica_crise" placeholder="ACN Impactado" required>
+                    </div>
+                    <div class="espasamento_informativo">
+                        <label for="sintoma_unica_crise">Sintoma: </label>
+                        <select name="select" id="sintoma_unica_crise">
+                            <option value="Lentidão">Lentidão</option>
+                            <option value="Indisponibilidade">Indisponibilidade</option>
+                            <option value="Degradação">Degradação</option>
+                        </select>
+                    </div>
+                    <div class="espasamento_informativo">
+                        <label for="status_unica_crise">Impacto: </label><br>
+                        <textarea type="text" id="status_unica_crise" placeholder="Houve indisponibilidade monmentânea no ambiente. Normalizado e validade após XXXXXX." cols="30" rows="5" required></textarea>
+                    </div>
+                    <div class="espasamento_informativo">
+                        <label for="identificacao_unica_crise">Identificado por: </label>
+                        <select name="select" id="identificacao_unica_crise">
+                            <option value="Tivit">TIVIT</option>
+                            <option value="Cliente">Cliente</option>
+                        </select>
+                    </div>
+                    <div class="espasamento_informativo">
+                        <label for="horario_notificacao_unica_crise">horârio de notificação para o TSR: </label>
+                        <input type="datetime-local" id="horario_notificacao_unica_crise" placeholder="" required>
+                    </div>
+                    <div class="espasamento_informativo">
+                        <label for="inicio_impacto_unica_crise">Período de impacto de: </label>
+                        <input type="datetime-local" id="inicio_impacto_unica_crise" placeholder="" required>
+                    </div>
+                    <div class="espasamento_informativo">
+                        <label for="fim_impacto_unica_crise">até: </label>
+                        <input type="datetime-local" id="fim_impacto_unica_crise" placeholder="" required>
+                    </div>
+                    <div class="espasamento_informativo">
+                        <label for="tsr_unica_crise">Responsável TSR: </label>
+                        <input type="text" id="tsr_unica_crise" placeholder="Nome Sobrenome" required>
+                    </div>
+                    <p class="p_botao"><a href="#" class="botao" onclick="gerar_copia_unica_crise()">Gerar Copia</a></p>
                 </div>
-            </div>
+                <div>
+                    <div class="texto_pronto" id="texto_unica_crise">
+                        texto:
+                    </div>
+                        <div class="Criando_mensagem">
+                            <p class="p_botao"><a href="#" class="botao" onclick="enviar()">Enviar</a></p> 
+                        </div>
+                    </div>
+                </div>
+            </section>			
         </div>
-    </section>			
-</div>
 
 
 <!-- Inicial de degradação -->
@@ -626,64 +621,60 @@
             <section class="corpo_mensagem">
                 <div class="Criando_mensagem">
                     <div class="espasamento_informativo">
-                        <label for="numero_degradacao">Iniciando Degradação: </label>
-                        <input type="text" id="numero_degradacao" placeholder="INC2022XXXXXXX" required>
+                        <label for="numero_inicial_degradacao">Iniciando Degradação: </label>
+                        <input type="text" id="numero_inicial_degradacao" placeholder="INC2022XXXXXXX" required>
                     </div>  
                     <div class="espasamento_informativo">
-                        <label for="Cliente">Cliente: </label>
-                        <input type="text" id="Cliente" placeholder="Votorantim Cimentos" required>
+                        <label for="cliente_inicial_degradacao">Cliente: </label>
+                        <input type="text" id="cliente_inicial_degradacao" placeholder="Votorantim Cimentos" required>
                     </div>  
                     <div class="espasamento_informativo">
-                        <label for="acn_degradacao">Ambiente: </label>
-                        <input type="text" id="acn_degradacao" placeholder="ACN Impactado" required>
+                        <label for="acn_inicial_degradacao">Ambiente: </label>
+                        <input type="text" id="acn_inicial_degradacao" placeholder="ACN Impactado" required>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="link_teams_degradacao">Teams: </label>
-                        <input type="text" id="link_teams_degradacao" placeholder="Link da sala teams" required>
+                        <label for="link_teams_inicial_degradacao">Teams: </label>
+                        <input type="text" id="link_teams_inicial_degradacao" placeholder="Link da sala teams" required>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="telefone_teams_degradacao">Telefone: </label>
-                        <input type="text" id="telefone_teams_degradacao" placeholder="telefone ramal teams" required>
+                        <label for="telefone_teams_inicial_degradacao">Telefone: </label>
+                        <input type="text" id="telefone_teams_inicial_degradacao" placeholder="telefone ramal teams" required>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="id_degradacao">ID: </label>
-                        <input type="text" id="id_degradacao" placeholder="ID da sala Teams" required>
+                        <label for="id_teams_inicial_degradacao">ID: </label>
+                        <input type="text" id="id_teams_inicial_degradacao" placeholder="ID da sala Teams" required>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="sintoma_degradacao">Sintoma: </label>
-                        <select name="select" id="sintoma_degradacao">
+                        <label for="sintoma_inicial_degradacao">Sintoma: </label>
+                        <select name="select" id="sintoma_inicial_degradacao">
                             <option value="Lentidão">Lentidão</option>
                             <option value="Indisponibilidade">Indisponibilidade</option>
                             <option value="Degradação">Degradação</option>
                         </select>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="impacto_crise">Impacto: </label>
-                        <input type="text" id="impacto_degradacao" placeholder="Ambiente apresentando..." required>
+                        <label for="impacto_inicial_degradacao">Impacto: </label>
+                        <input type="text" id="impacto_inicial_degradacao" placeholder="Ambiente apresentando..." required>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="inicio_impacto_degradacao">Início do impacto: </label>
-                        <input type="datetime-local" id="inicio_impacto_degradacao" placeholder="" required>
+                        <label for="inicio_impacto_inicial_degradacao">Início do impacto: </label>
+                        <input type="datetime-local" id="inicio_impacto_inicial_degradacao" placeholder="" required>
                     </div>
                     <div class="espasamento_informativo">
                         <label for="inicio_degradacao">Início da Degradação: </label>
                         <input type="datetime-local" id="inicio_degradacao" placeholder="" required>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="delay_degradacao">Delay Impacto X Tratativa: </label>
-                        <input type="datetime-local" id="delay_degradacao" placeholder="" required>
-                    </div>
-                    <div class="espasamento_informativo">
-                        <label for="identificado_degradacao">Identificado por: </label>
-                        <select name="select" id="identificado_degradacao">
+                        <label for="identificado_inicial_degradacao">Identificado por: </label>
+                        <select name="select" id="identificado_inicial_degradacao">
                             <option value="Tivit">TIVIT</option>
                             <option value="Cliente">Cliente</option>
                         </select>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="equipe_rm_degradacao">Resolution Manager: </label>
-                        <input type="text" id="equipe_rm_degradacao" placeholder="Nome Sobrenome" required>
-                        <select name="select">
+                        <label for="rm_inicial_degradacao">Resolution Manager: </label>
+                        <input type="text" id="rm_inicial_degradacao" placeholder="Nome Sobrenome" required>
+                        <select name="select" id="grupo_rm_inicial_degradacao">
                             <option value="TSO">TSO</option>
                             <option value="TMM">TMM</option>
                             <option value="Cloud">Cloud</option>
@@ -691,12 +682,12 @@
                         </select>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="Equipes_atuando_degradacao">Equipes atuando: </label>
-                        <input type="text" id="Equipes_atuando_degradacao" placeholder="Windows, NOC, SOC, Linux..." required>
+                        <label for="equipes_atuando_inicial_degradacao">Equipes atuando: </label>
+                        <input type="text" id="equipes_atuando_inicial_degradacao" placeholder="Windows, NOC, SOC, Linux..." required>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="Responsavel_TSR_degradacao">Responsavel TSR: </label>
-                        <input type="text" id="Responsavel_TSR_degradacao" placeholder="Nome Sobrenome" required>
+                        <label for="responsavel_tsr_inicial_degradacao">Responsavel TSR: </label>
+                        <input type="text" id="responsavel_tsr_inicial_degradacao" placeholder="Nome Sobrenome" required>
                     </div>
                     <p class="p_botao"><a href="#" class="botao" onclick="gerar_copia_incial_degradacao()">Gerar Copia</a></p>
                 </div>
@@ -712,6 +703,7 @@
             </section>			
         </div>
 
+
 <!-- Atualização de degradação -->
         <div id="popup_atualizacao_degradacao" class="popup">
             <header class="topo_inicial">
@@ -720,34 +712,34 @@
             <section class="corpo_mensagem">
                 <div class="Criando_mensagem">
                     <div class="espasamento_informativo">
-                        <label for="numero_degradacao">Atualização da Degradação: </label>
-                        <input type="text" id="numero_degradacao" placeholder="INC2022XXXXXXX" required>
+                        <label for="numero_atualizacao_degradacao">Atualização da Degradação: </label>
+                        <input type="text" id="numero_atualizacao_degradacao" placeholder="INC2022XXXXXXX" required>
                     </div>  
                     <div class="espasamento_informativo">
-                        <label for="Cliente">Cliente: </label>
-                        <input type="text" id="Cliente" placeholder="Votorantim Cimentos" required>
+                        <label for="cliente_atualizacao_degradacao">Cliente: </label>
+                        <input type="text" id="cliente_atualizacao_degradacao" placeholder="Votorantim Cimentos" required>
                     </div>  
                     <div class="espasamento_informativo">
-                        <label for="acn_degradacao">Ambiente: </label>
-                        <input type="text" id="acn_degradacao" placeholder="ACN Impactado" required>
+                        <label for="acn_atualizacao_degradacao">Ambiente: </label>
+                        <input type="text" id="acn_atualizacao_degradacao" placeholder="ACN Impactado" required>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="status_degradacao">Status: </label><br>
-                        <textarea type="text" id="status_degradacao" placeholder="Ambiente segue..." cols="30" rows="5" required></textarea>
+                        <label for="status_atualizacao_degradacao">Status: </label><br>
+                        <textarea type="text" id="status_atualizacao_degradacao" placeholder="Ambiente segue..." cols="30" rows="5" required></textarea>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="acao_degradacao">Ações Realizadas/Em Andamento: </label>
+                        <label for="acoes_atualizacao_degradacao">Ações Realizadas/Em Andamento: </label>
                         <br>
-                        <textarea type="text" id="acao_degradacao" placeholder="❌ Falha no servidor...       ✅ Acionamento da Equipe...      ⚠ Acompanhamento." cols="30" rows="5" required></textarea>
+                        <textarea type="text" id="acoes_atualizacao_degradacao" placeholder="❌ Falha no servidor...       ✅ Acionamento da Equipe...      ⚠ Acompanhamento." cols="30" rows="5" required></textarea>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="previsto_degradacao">Status: </label><br>
-                        <textarea type="text" id="previsto_degradacao" placeholder="📍 Validação do ambiente" cols="30" rows="5" required></textarea>
+                        <label for="previsto_atualizacao_degradacao">Status: </label><br>
+                        <textarea type="text" id="previsto_atualizacao_degradacao" placeholder="📍 Validação do ambiente" cols="30" rows="5" required></textarea>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="equipe_rm_degradacao">Resolution Manager: </label>
-                        <input type="text" id="equipe_rm_degradacao" placeholder="Nome Sobrenome" required>
-                        <select name="select">
+                        <label for="rm_atualizacao_degradacao">Resolution Manager: </label>
+                        <input type="text" id="rm_atualizacao_degradacao" placeholder="Nome Sobrenome" required>
+                        <select name="select" id="grupo_rm_atualizacao_degradacao">
                             <option value="TSO">TSO</option>
                             <option value="TMM">TMM</option>
                             <option value="Cloud">Cloud</option>
@@ -759,8 +751,8 @@
                         <input type="text" id="Equipes_atuando_degradacao" placeholder="Windows, NOC, SOC, Linux..." required>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="Responsavel_TSR_degradacao">Responsavel TSR: </label>
-                        <input type="text" id="Responsavel_TSR_degradacao" placeholder="Nome Sobrenome" required>
+                        <label for="tsr_atualizacao_degradacao">Responsavel TSR: </label>
+                        <input type="text" id="tsr_atualizacao_degradacao" placeholder="Nome Sobrenome" required>
                     </div>
                     <<p class="p_botao"><a href="#" class="botao" onclick="gerar_copia_atualizacao_degradacao()">Gerar Copia</a></p>
                     <p>✅ Concluido  📍 Previsto</p>
@@ -778,6 +770,7 @@
             </section>			
         </div>
 
+
 <!-- Validação de degradação -->
         <div id="popup_validacao_degradacao" class="popup">
             <header class="topo_inicial">
@@ -786,28 +779,28 @@
             <section class="corpo_mensagem">
                 <div class="Criando_mensagem">
                     <div class="espasamento_informativo">
-                        <label for="numero_degradacao">Validação da Degradação: </label>
-                        <input type="text" id="numero_degradacao" placeholder="INC2022XXXXXXX" required>
+                        <label for="numero_validacao_degradacao">Validação da Degradação: </label>
+                        <input type="text" id="numero_validacao_degradacao" placeholder="INC2022XXXXXXX" required>
                     </div>  
                     <div class="espasamento_informativo">
-                        <label for="Cliente">Cliente: </label>
-                        <input type="text" id="Cliente" placeholder="Votorantim Cimentos" required>
+                        <label for="cliente_validacao_degradacao">Cliente: </label>
+                        <input type="text" id="cliente_validacao_degradacao" placeholder="Votorantim Cimentos" required>
                     </div>  
                     <div class="espasamento_informativo">
-                        <label for="acn_degradacao">Ambiente: </label>
-                        <input type="text" id="acn_degradacao" placeholder="ACN Impactado" required>
+                        <label for="acn_validacao_degradacao">Ambiente: </label>
+                        <input type="text" id="acn_validacao_degradacao" placeholder="ACN Impactado" required>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="status_degradacao">Status: </label><br>
-                        <textarea type="text" id="status_degradacao" cols="30" rows="5" required>Ambiente segue operacional e em fase de validação junto ao cliente. Checkpoint as XXhXX.</textarea>
+                        <label for="status_validacao_degradacao">Status: </label><br>
+                        <textarea type="text" id="status_validacao_degradacao" cols="30" rows="5" required>Ambiente segue operacional e em fase de validação junto ao cliente. Checkpoint as XXhXX.</textarea>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="solucao_degradacao">Solução Aplicada: </label>
-                        <input type="text" id="solucao_degradacao" placeholder="Boot na maquina..." required>
+                        <label for="solucao_validacao_degradacao">Solução Aplicada: </label>
+                        <input type="text" id="solucao_validacao_degradacao" placeholder="Boot na maquina..." required>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="Responsavel_TSR_degradacao">Responsavel TSR: </label>
-                        <input type="text" id="Responsavel_TSR_degradacao" placeholder="Nome Sobrenome" required>
+                        <label for="tsr_validacao_degradacao">Responsavel TSR: </label>
+                        <input type="text" id="tsr_validacao_degradacao" placeholder="Nome Sobrenome" required>
                     </div>
                     <p class="p_botao"><a href="#" class="botao" onclick="gerar_copia_validacao_degradacao()">Gerar Copia</a></p>
                 </div>
@@ -823,6 +816,7 @@
             </section>			
         </div>
 
+
 <!-- Encerramento de degradação -->
         <div id="popup_encerramento_degradacao" class="popup">
             <header class="topo_inicial">
@@ -831,49 +825,41 @@
             <section class="corpo_mensagem">
                 <div class="Criando_mensagem">
                     <div class="espasamento_informativo">
-                        <label for="numero_degradacao">Encerramento da Degradação: </label>
-                        <input type="text" id="numero_degradacao" placeholder="INC2022XXXXXXX" required>
+                        <label for="numero_encerramento_degradacao">Encerramento da Degradação: </label>
+                        <input type="text" id="numero_encerramento_degradacao" placeholder="INC2022XXXXXXX" required>
                     </div>  
                     <div class="espasamento_informativo">
-                        <label for="Cliente">Cliente: </label>
-                        <input type="text" id="Cliente" placeholder="Votorantim Cimentos" required>
+                        <label for="cliente_encerramento_degradacao">Cliente: </label>
+                        <input type="text" id="cliente_encerramento_degradacao" placeholder="Votorantim Cimentos" required>
                     </div>  
                     <div class="espasamento_informativo">
-                        <label for="acn_degradacao">Ambiente: </label>
-                        <input type="text" id="acn_degradacao" placeholder="ACN Impactado" required>
+                        <label for="acn_encerramento_degradacao">Ambiente: </label>
+                        <input type="text" id="acn_encerramento_degradacao" placeholder="ACN Impactado" required>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="status_degradacao">Status: </label><br>
-                        <textarea type="text" id="status_degradacao" placeholder="Preencher solução aplicada no portal." cols="30" rows="5" required></textarea>
+                        <label for="status_encerramento_degradacao">Status: </label><br>
+                        <textarea type="text" id="status_encerramento_degradacao" placeholder="Preencher solução aplicada no portal." cols="30" rows="5" required></textarea>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="data_encerramento_degradacao">Data Encerramento: </label>
-                        <input type="datetime-local" id="data_encerramento_degradacao" placeholder="" required>
+                        <label for="inicio_encerramento_degradacao">Inicio da Crise: </label>
+                        <input type="datetime-local" id="inicio_encerramento_degradacao" placeholder="" required>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="periodo_impacto_degradacao">Período de impacto: </label>
-                        <input type="datetime-local" id="periodo_impacto_degradacao" placeholder="" required>
+                        <label for="fim_encerramento_degradacao">Encerramento: </label>
+                        <input type="datetime-local" id="fim_encerramento_degradacao" placeholder="" required>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="validacao_degradacao">Período de Validação: </label>
-                        <input type="datetime-local" id="validacao_degradacao" placeholder="" required>
+                        <label for="inicio_impacto_encerramento_degradacao">Inicio de impacto: </label>
+                        <input type="datetime-local" id="inicio_impacto_encerramento_degradacao" placeholder="" required>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="inicio_degradacao">Início: </label>
-                        <input type="datetime-local" id="inicio_degradacao" placeholder="" required>
+                        <label for="inicio_validacao_encerramento_degradacao">Fim do impacto: </label>
+                        <input type="datetime-local" id="fim_impacto_encerramento_degradacao" placeholder="" required>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="fim_degradacao">Fim: </label>
-                        <input type="datetime-local" id="fim_degradacao" placeholder="" required>
-                    </div>
-                    <div class="espasamento_informativo">
-                        <label for="Periodo_degradacao">Período: </label>
-                        <input type="datetime-local" id="Periodo_degradacao" placeholder="" required>
-                    </div>
-                    <div class="espasamento_informativo">
-                        <label for="equipe_rm_degradacao">Resolution Manager: </label>
-                        <input type="text" id="equipe_rm_degradacao" placeholder="Nome Sobrenome" required>
-                        <select name="select">
+                        <label for="rm_encerramento_degradacao">Resolution Manager: </label>
+                        <input type="text" id="rm_encerramento_degradacao" placeholder="Nome Sobrenome" required>
+                        <select name="select" id="grupo_rm_encerramento_degradacao">
                             <option value="TSO">TSO</option>
                             <option value="TMM">TMM</option>
                             <option value="Cloud">Cloud</option>
@@ -881,8 +867,8 @@
                         </select>
                     </div>
                     <div class="espasamento_informativo">
-                        <label for="Responsavel_TSR_degradacao">Responsavel TSR: </label>
-                        <input type="text" id="Responsavel_TSR_Cdegradacao" placeholder="Nome Sobrenome" required>
+                        <label for="tsr_encerramento_degradacao">Responsavel TSR: </label>
+                        <input type="text" id="tsr_encerramento_degradacao" placeholder="Nome Sobrenome" required>
                     </div>
                     <p class="p_botao"><a href="#" class="botao" onclick="gerar_copia_encerramento_degradacao()">Gerar Copia</a></p>
                 </div>
@@ -898,43 +884,83 @@
             </section>			
         </div>
 
+
+<!-- unica de degradacao -->
+        <div id="popup_unica_degradacao" class="popup">
+            <header class="topo_inicial">
+                <a href="javascript: fechar_unica_degradacao();" class="fechar_informativo">X</a>
+            </header>
+            <section class="corpo_mensagem">
+                <div class="Criando_mensagem">
+                    <div class="espasamento_informativo">
+                        <label for="numero_unica_degradacao">Degradação Única: </label>
+                        <input type="text" id="numero_unica_degradacao" placeholder="INC2022XXXXXXX" required>
+                    </div>  
+                    <div class="espasamento_informativo">
+                        <label for="cliente_unica_degradacao">Cliente: </label>
+                        <input type="text" id="cliente_unica_degradacao" placeholder="Votorantim Cimentos" required>
+                    </div>  
+                    <div class="espasamento_informativo">
+                        <label for="acn_unica_degradacao">Ambiente: </label>
+                        <input type="text" id="acn_unica_degradacao" placeholder="ACN Impactado" required>
+                    </div>
+                    <div class="espasamento_informativo">
+                        <label for="sintoma_unica_degradacao">Sintoma: </label>
+                        <select name="select" id="sintoma_unica_degradacao">
+                            <option value="Lentidão">Lentidão</option>
+                            <option value="Indisponibilidade">Indisponibilidade</option>
+                            <option value="Degradação">Degradação</option>
+                        </select>
+                    </div>
+                    <div class="espasamento_informativo">
+                        <label for="status_unica_degradacao">Impacto: </label><br>
+                        <textarea type="text" id="status_unica_degradacao" placeholder="Houve indisponibilidade monmentânea no ambiente. Normalizado e validade após XXXXXX." cols="30" rows="5" required></textarea>
+                    </div>
+                    <div class="espasamento_informativo">
+                        <label for="identificacao_unica_degradacao">Identificado por: </label>
+                        <select name="select" id="identificacao_unica_degradacao">
+                            <option value="Tivit">TIVIT</option>
+                            <option value="Cliente">Cliente</option>
+                        </select>
+                    </div>
+                    <div class="espasamento_informativo">
+                        <label for="horario_notificacao_unica_degradacao">horârio de notificação para o TSR: </label>
+                        <input type="datetime-local" id="horario_notificacao_unica_degradacao" placeholder="" required>
+                    </div>
+                    <div class="espasamento_informativo">
+                        <label for="inicio_impacto_unica_degradacao">Período de impacto de: </label>
+                        <input type="datetime-local" id="inicio_impacto_unica_degradacao" placeholder="" required>
+                    </div>
+                    <div class="espasamento_informativo">
+                        <label for="fim_impacto_unica_degradacao">até: </label>
+                        <input type="datetime-local" id="fim_impacto_unica_degradacao" placeholder="" required>
+                    </div>
+                    <div class="espasamento_informativo">
+                        <label for="tsr_unica_degradacao">Responsável TSR: </label>
+                        <input type="text" id="tsr_unica_degradacao" placeholder="Nome Sobrenome" required>
+                    </div>
+                    <p class="p_botao"><a href="#" class="botao" onclick="gerar_copia_unica_deradacao()">Gerar Copia</a></p>
+                </div>
+                <div>
+                    <div class="texto_pronto" id="texto_unica_degradacao">
+                        texto:
+                    </div>
+                        <div class="Criando_mensagem">
+                            <p class="p_botao"><a href="#" class="botao" onclick="enviar()">Enviar</a></p> 
+                        </div>
+                    </div>
+                </div>
+            </section>						
+        </div>
+
+
 <!-- Informativo Alarme -->
         <div id="popup_informativo_alarme" class="popup_informativo">
             <header class="topo_inicial">
                 <a href="javascript: fechar_informativo_alarme();" class="fechar_informativo">X</a>
             </header>
             <section class="corpo_mensagem_informativo">
-                <div class="texto_pronto">
-                    ⚠ Informatico TSR <br>
-                    Detectado alerta na monitoração de serviços <br>
-                    <br>
-                    Possivel anormalidade no serviço "XXXX" do cliente XXXXXXX. <br>
-                    <br>
-                    Equipes operacionais acionadas. <br>
-                    teams: XXXXXXX <br>
-                    Telefone: XXXXX     ID: XXXXX
-                    <div class="Criando_mensagem">
-                        <p class="p_botao"><a href="#" class="botao" onclick="enviar()">Enviar</a></p>
-                    </div>
-                </div>
-                
-                
-            </section>			
-        </div>
-
-<!-- Informativo Pre crise -->
-        <div id="popup_informativo_pre_crise" class="popup_informativo">
-            <header class="topo_inicial">
-                <a href="javascript: fechar_informativo_pre_crise();" class="fechar_informativo">X</a>
-            </header>
-            <section class="corpo_mensagem_informativo">
-                <div class="texto_pronto">
-                    Comunicação Pré-Crise: <br>
-                    Cliente: XXXX <br>
-                    Status: Serviço XXX indisponivel. Crise em processo de abertura. <br>
-                    Teams: XXXXXX <br>
-                    <br>
-                    Telefone: XXXXX     ID: XXXX
+                <div class="texto_pronto" id="texto_alarme">
                 </div>
                 <div class="Criando_mensagem">
                     <p class="p_botao"><a href="#" class="botao" onclick="enviar()">Enviar</a></p>
@@ -942,27 +968,42 @@
             </section>			
         </div>
 
+
+<!-- Informativo Pre crise -->
+        <div id="popup_informativo_pre_crise" class="popup_informativo">
+            <header class="topo_inicial">
+                <a href="javascript: fechar_informativo_pre_crise();" class="fechar_informativo">X</a>
+            </header>
+            <section class="corpo_mensagem_informativo">
+                <div class="texto_pronto" id="texto_pre_crise">
+                </div>
+                <div class="Criando_mensagem">
+                    <p class="p_botao"><a href="#" class="botao" onclick="enviar()">Enviar</a></p>
+                </div>
+            </section>			
+        </div>
+
+
 <!-- Informativo Pre Degradação -->
         <div id="popup_informativo_pre_degradacao" class="popup_informativo">
             <header class="topo_inicial">
                 <a href="javascript: fechar_informativo_pre_degradacao();" class="fechar_informativo">X</a>
             </header>
             <section class="corpo_mensagem_informativo">
-                <div class="texto_pronto">
-                    Comunicação Pré-Degradação: <br>
-                    Cliente: XXXX <br>
-                    Status: Serviço XXX degradado. Degradação em processo de abertura. <br>
-                    Teams: XXXXXX <br>
-                    <br>
-                    Telefone: XXXXX     ID: XXXX
+                <div class="texto_pronto" id="texto_pre_degradacao">
                 </div>
                 <div class="Criando_mensagem">
                     <p class="p_botao"><a href="#" class="botao" onclick="enviar()">Enviar</a></p> 
                 </div>
             </section>			
         </div>
+
+        
     </main>
     <script src="js/envio_comunicacao.js"></script>
     <script src="js/modo_escuro.js"></script>
+    <script src="js/envio_informativos.js"></script>
+    <script src="js/envio_crise.js"></script>
+    <script src="js/envio_degradacao.js"></script>
 </body>
 </html>
